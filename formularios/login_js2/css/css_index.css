@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    background-image: url('../imagenes/Fondo9.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    font-family: "Poppins", sans-serif;	
+}
+
+.header_principal p{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    background: -webkit-linear-gradient(#e2b743,#db7f1b);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#logo_index{
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+}
+
+.container_principal{
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
+}
+
+.header_principal{
+    padding: 10px;
+}
+
+.container_titulo-bienvenido{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 550;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+.container_buttons{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* CSS Botones de iniciar sesión - registrarse*/
+.buttons_index{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    display:inline-block;
+	height: 45px;
+	line-height: 40px;
+	width: 17%;
+	background-color: #04275f;/*Color caja de texto enviar*/
+	color: white; /*Color de letras enviar */
+	font-weight: bold;
+	border-radius: 55px;
+	cursor: pointer;
+	transition: .1s ease all;
+	border: 2.7px solid;
+    border-color: #04275f;
+    margin: 10px;
+}
+
+.buttons_index:hover{
+    background-color: #04277f;
+    border-color: #04277f;
+    
+}
+
+@media screen and (max-width: 800px) {
+    #logo_index{
+        width: 37%;
+    }
+    .container_titulo-bienvenido{
+        margin-top: 30px;
+        font-size: 33px;
+    }
+    .buttons_index{
+        width: 30%;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 800px){
+    .video{
+     width: 100%;
+   }

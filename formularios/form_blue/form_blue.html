@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/form_blue.css" />
+    <title>Iniciar Sesión | Registrarse</title>
+  </head>
+  <body>
+		
+		<!--principal -->
+    <div class="container">
+			<!-- div iniciar sesión -->
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Iniciar Sesión</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Usuario" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Contraseña" />
+            </div>
+            <input type="submit" class="btn solid" value="Iniciar Sesión"/>
+            
+          <form></form>
+          <form action="index.html" class="sign-up-form" method="POST">
+            <h2 class="title">Registrarme</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Usuario" name="usuario"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Correo" name="correo"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Contraseña" name="password" />
+            </div>
+              <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Repetir contraseña" name="repetirPassword"/>
+            </div>
+            <input type="submit" class="btn" value="Registrarme" name="registrarme" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>¿Eres nuevo?</h3>
+            <p>
+              No he perdido la cabeza... Tengo la copia de seguridad en algún sitio.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Registrarme
+            </button>
+          </div>
+          <a href="index.html"><img src="imagenes/logo_blanco1.png" class="image"/></a>
+
+
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>¿Ya estás registrado?</h3>
+            <p>
+              Quien ríe al último, piensa más lento.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Iniciar Sesión
+            </button>
+          </div>
+          <a href="index.html"><img src="imagenes/logo_blanco1.png" class="image"/></a>
+        </div>
+      </div>
+    </div>
+      
+
+    <script src="js/mainform.js"></script>
+  </body>
+</html>
