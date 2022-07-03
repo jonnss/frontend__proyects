@@ -18,14 +18,19 @@ header{
     padding: 5px 50px;
     justify-content: space-between;
     align-items: center;
-    background-color: #00000080;
+    background-color: #00000090;
 }
 
 .logo img{
     padding-top: 5px;
-    width: 70px;
+    width: 80px;
     height: auto;
     cursor: pointer;
+    transition: all 0.4s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
 }
 .header__nav ul {
     padding: 0;
@@ -46,14 +51,14 @@ header{
 
 .header__nav ul li a:hover{
     
-    border-bottom: 2px solid #DA8800;
+    border-bottom: 2px solid #BB2E2E;
     padding-bottom: 3px;
 }
 
 .nav__button button{
     font-family: 'Nunito', sans-serif;
     padding: 5px 25px;
-    background-color: #DA8800;
+    background-color: #BB2E2E;
     color: white;
     border: none;
     border-radius: 50px;
@@ -63,6 +68,6 @@ header{
 }
 
 .nav__button button:hover{
-    background-color: #BF7600;
+    background-color: #982525;
 }
 
