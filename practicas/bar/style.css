@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background-image: url(/practicas/bar/dovi-rfOFRwKHtJM-unsplash.jpg);
+    background-image: url(/practicas/bar/pexels-mali-maeder-219095.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,17 +13,17 @@ body{
 }
 
 header{
-    height: 90px;
+    height: 80px;
     display: flex;
     padding: 5px 50px;
     justify-content: space-between;
     align-items: center;
-    background-color: #00000060;
+    background-color: #00000080;
 }
 
 .logo img{
     padding-top: 5px;
-    width: 80px;
+    width: 70px;
     height: auto;
     cursor: pointer;
 }
@@ -45,13 +45,14 @@ header{
 }
 
 .header__nav ul li a:hover{
+    
     border-bottom: 2px solid #DA8800;
     padding-bottom: 3px;
 }
 
 .nav__button button{
     font-family: 'Nunito', sans-serif;
-    padding: 8px 25px;
+    padding: 5px 25px;
     background-color: #DA8800;
     color: white;
     border: none;
