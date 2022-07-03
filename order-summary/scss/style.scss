@@ -1,0 +1,155 @@
+/* ----- Google Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* ----- CSS Reset ----- */
+@import 'css-reset';
+
+/* ----- Colors ----- */
+
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$bridht-blue-hover: hsla(245, 75%, 52%, 70%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$white: hsl(0, 0%, 100%);
+
+/* ----- Variables ----- */
+:root {
+  --card-width: 32.7rem;
+  --card-height: 56.7rem;
+  --card-heading-font-size: 2.2rem;
+  --card-text-font-size: 1.5rem;
+  --card-text-padding: 0 3.6rem;
+  --subscription-plan-width: 27.9rem;
+  --subscription-plan-height: 8.8rem;
+  --subscription-plan-padding: 1.6rem;
+  --change-plan-btn-margin: 0 0 0 3.6rem;
+  --payment-btn-width: 27.9rem;
+  --payment-btn-height: 5rem;
+  --payment-btn-margin: 2.4rem auto;
+}
+
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background: url(../assets/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  background-color: $pale-blue;
+}
+
+/* ----- Card ----- */
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 2rem;
+  background-color: $white;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  margin: 7rem auto;
+}
+
+.hero-img {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card-heading {
+  font-size: var(--card-heading-font-size);
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2.8rem;
+  margin-bottom: 1.9rem;
+}
+
+.card-text {
+  font-size: var(--card-text-font-size);
+  font-weight: 500;
+  line-height: 1.5;
+  color: $desaturated-blue;
+  text-align: center;
+  padding: var(--card-text-padding);
+}
+
+/* ----- Subscription Plan and Price ----- */
+.subscription-plan {
+  display: flex;
+  align-items: center;
+  width: var(--subscription-plan-width);
+  height: var(--subscription-plan-height);
+  background-color: $very-pale-blue;
+  border-radius: 2rem;
+  margin: 0 auto;
+  margin-top: 2.6rem;
+  padding: var(--subscription-plan-padding);
+}
+
+.subscription-plan-icon {
+  margin-right: 1.8rem;
+}
+
+.subscription-details {
+  display: flex;
+  flex-direction: column;
+
+  .plan-name {
+    font-weight: 700;
+  }
+
+  .subscription-price {
+    color: $desaturated-blue;
+    font-weight: 500;
+  }
+}
+
+.change-plan-btn {
+  text-decoration: underline;
+  color: $bright-blue;
+  cursor: pointer;
+  margin: var(--change-plan-btn-margin);
+  &:hover {
+    color: $bridht-blue-hover;
+  }
+}
+
+/* ----- Payment and Cencel Buttons ----- */
+.payment-btn {
+  width: var(--payment-btn-width);
+  height: var(--payment-btn-height);
+  border-radius: 1rem;
+  font-weight: 700;
+  background-color: $bright-blue;
+  color: $very-pale-blue;
+  text-align: center;
+  display: block;
+  margin: var(--payment-btn-margin);
+  cursor: pointer;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  &:hover {
+    background-color: $bridht-blue-hover;
+  }
+}
+
+.cancel-btn {
+  font-weight: 700;
+  color: $desaturated-blue;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
+/* ----- Media Queries ----- */
+@import 'media-lg';

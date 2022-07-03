@@ -1,0 +1,86 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/practicas/pexels-creative-vix-9754.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    max-height: 90px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    padding: 10px;
+}
+
+.header__logo img{
+    width: 85px;
+    height: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.header__logo img:hover{
+    transform: scale(1.2);
+}
+
+nav{
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gray;
+    transition: all 0.8;
+}
+
+
+/* Conatiner principal*/
+.container__principal{
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.container__principal h1{
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+}
+
+.principal__button button{
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+
+    
+}
+
+.principal__button button:hover{
+    
+}

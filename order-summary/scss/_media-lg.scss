@@ -1,0 +1,24 @@
+// 992px
+@media (min-width: 62rem) {
+  :root {
+    --card-width: 45rem;
+    --card-height: 69.8rem;
+    --card-heading-font-size: 2.8rem;
+    --card-text-font-size: 1.6rem;
+    --card-text-padding: 0 7.6rem;
+    --subscription-plan-width: 35.4rem;
+    --subscription-plan-height: 10rem;
+    --subscription-plan-padding: 2.4rem;
+    --change-plan-btn-margin: 0 0 0 9.3rem;
+    --payment-btn-width: 35.4rem;
+    --payment-btn-margin: 3rem auto;
+  }
+
+  body {
+    background: url(../assets/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-color: $pale-blue;
+  }
+}

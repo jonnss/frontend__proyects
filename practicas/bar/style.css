@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-image: url(/practicas/bar/dovi-rfOFRwKHtJM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    padding: 5px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000060;
+}
+
+.logo img{
+    padding-top: 5px;
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+.header__nav ul {
+    padding: 0;
+}
+
+.header__nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+.header__nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header__nav ul li a:hover{
+    border-bottom: 2px solid #DA8800;
+    padding-bottom: 3px;
+}
+
+.nav__button button{
+    font-family: 'Nunito', sans-serif;
+    padding: 8px 25px;
+    background-color: #DA8800;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav__button button:hover{
+    background-color: #BF7600;
+}
+
